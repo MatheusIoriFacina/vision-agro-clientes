@@ -1,9 +1,10 @@
 import logoVisionAgro from "../assets/vision-agro-logo.png";
 
-export default function Header({ currentPage, onNavigate }) {
+export default function Header({ currentPage, profile, onNavigate }) {
   const items = [
     { id: "home", label: "Início" },
     { id: "ajuda", label: "Central de ajuda" },
+    { id: "clientes", label: "Clientes" },
     { id: "atendimento", label: "Fale conosco" },
     { id: "avaliacao", label: "Avaliações" },
   ];
@@ -11,18 +12,18 @@ export default function Header({ currentPage, onNavigate }) {
   return (
     <header className="topbar">
       <div className="topbar__inner">
-        <div className="brand" onClick={() => onNavigate("home")} role="button" tabIndex={0}>
+        <button className="brand" onClick={() => onNavigate("home")} aria-label="Voltar ao início">
           <div className="brand__logo">
             <img src={logoVisionAgro} alt="Vision Agro" />
           </div>
 
-          <div>
+          <div className="brand__text">
             <h1>VISION AGRO</h1>
             <span>PORTAL DO CLIENTE</span>
           </div>
-        </div>
+        </button>
 
-        <nav className="nav">
+        <nav className="nav" aria-label="Navegação do Portal do Cliente">
           {items.map((item) => (
             <button
               key={item.id}
@@ -34,11 +35,11 @@ export default function Header({ currentPage, onNavigate }) {
           ))}
         </nav>
 
-        <button className="account-button">
-          <span className="account-button__avatar">JS</span>
+        <button className="account-button" onClick={() => onNavigate("perfil")}> 
+          <img className="account-button__avatar" src={profile.avatar} alt={`Foto de ${profile.name}`} />
           <span className="account-button__text">
-            <strong>João Silva</strong>
-            <small>Produtor rural</small>
+            <strong>{profile.name}</strong>
+            <small>Meu perfil</small>
           </span>
         </button>
       </div>
