@@ -52,7 +52,7 @@ export default function Footer({ onNavigate }) {
       </div>
 
       <div className="footer-art__bottom">
-        <span>Vision Agro • Protótipo acadêmico • Módulo Clientes</span>
+        <span>Vision Agro • Módulo Clientes</span>
         <span>2026</span>
       </div>
     </footer>

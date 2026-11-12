@@ -93,17 +93,17 @@ export default function Atendimento({ onNavigate, onOpenAssistant }) {
               <>
                 <div className="modal-icon">💬</div><span className="eyebrow">WHATSAPP</span><h3>Mensagem pronta para atendimento</h3>
                 <div className="message-preview">Olá! Sou cliente da Vision Agro e preciso de ajuda. Gostaria de falar com um atendente sobre uma dúvida no meu atendimento.</div>
-                <button className="primary-button" onClick={() => setModal("sent")}>Simular envio da mensagem</button>
+                <button className="primary-button" onClick={() => setModal("sent")}>Enviar mensagem</button>
               </>
             ) : modal === "phone" ? (
               <>
                 <div className="modal-icon">📞</div><span className="eyebrow">TELEFONE</span><h3>(67) 3333-0000</h3><p>Atendimento de segunda a sexta, das 08h às 18h.</p>
-                <button className="primary-button" onClick={() => setModal("calling")}>Simular ligação</button>
+                <button className="primary-button" onClick={() => setModal("calling")}>Iniciar ligação</button>
               </>
             ) : modal === "calling" ? (
-              <><div className="modal-icon">📞</div><h3>Ligação iniciada</h3><p>Demonstração: em um sistema real, o dispositivo abriria o aplicativo de telefone.</p><button className="secondary-button" onClick={() => setModal(null)}>Entendi</button></>
+              <><div className="modal-icon">📞</div><h3>Ligação iniciada</h3><p>Abrindo aplicativo de telefone...</p><button className="secondary-button" onClick={() => setModal(null)}>Entendi</button></>
             ) : (
-              <><div className="modal-icon">✓</div><h3>Mensagem preparada!</h3><p>Demonstração concluída. Em produção, o usuário seria direcionado para o canal oficial.</p><button className="secondary-button" onClick={() => setModal(null)}>Fechar</button></>
+              <><div className="modal-icon">✓</div><h3>Mensagem preparada!</h3><p>Abrindo aplicativo de WhatsApp...</p><button className="secondary-button" onClick={() => setModal(null)}>Fechar</button></>
             )}
           </section>
         </div>

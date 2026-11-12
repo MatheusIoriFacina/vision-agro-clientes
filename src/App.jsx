@@ -40,9 +40,9 @@ const clients = [
     since: "Cliente desde 2023",
     rating: 5,
     avatar: avatarCarlos,
-    products: ["Vision Monitor X2", "Sensor Field Pro"],
+    products: ["Trator Agrícola TX 180", "UTV Rural 4x4"],
     status: "Cliente ativo",
-    bio: "Utiliza soluções Vision Agro para acompanhar produtividade, conectividade e indicadores da lavoura.",
+    bio: "Utiliza soluções Vision Agro para acompanhar produtiviadade, além de utilizar nossos equipamentos.",
   },
   {
     id: 2,
@@ -54,9 +54,9 @@ const clients = [
     since: "Cliente desde 2024",
     rating: 5,
     avatar: avatarMariana,
-    products: ["Vision Connect", "Agro Hub"],
+    products: ["Plantadeira 11 Linhas", "Semente de Milho Híbrido VA-7"],
     status: "Cliente ativo",
-    bio: "Adota recursos digitais para integrar rotina da propriedade e suporte de campo.",
+    bio: "Utiliza nosso suporte para otimizar a produção, além de utiliar nossos equipamentos e sementes, garantindo maior produtividade na lavoura.",
   },
   {
     id: 3,
@@ -68,9 +68,9 @@ const clients = [
     since: "Cliente desde 2022",
     rating: 4,
     avatar: avatarRoberto,
-    products: ["Sensor Field Pro"],
+    products: ["Semente de Soja Premium"],
     status: "Cliente ativo",
-    bio: "Trabalha com monitoramento de talhões e abertura de chamados técnicos pelo portal.",
+    bio: "Faz uso das nossas sementes de soja e utiliza o suporte Vision Agro para tirar dúvidas sobre plantio e manejo da lavoura.",
   },
   {
     id: 4,
@@ -82,9 +82,9 @@ const clients = [
     since: "Cliente desde 2025",
     rating: 5,
     avatar: avatarFernanda,
-    products: ["Vision Connect"],
+    products: ["Grade Aradoura 20 discos", "Semente de Milho Híbrido VA-7"],
     status: "Cliente ativo",
-    bio: "Usa o suporte Vision Agro para facilitar o acompanhamento dos equipamentos e da conectividade.",
+    bio: "Usa nosso suporte como referência para otimizar o uso de equipamentos e sementes, além de adquirir produtos Vision Agro para sua produção de hortaliças e milho.",
   },
 ];
 

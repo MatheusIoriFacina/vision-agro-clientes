@@ -42,8 +42,8 @@ export default function MeuPerfil({ profile, onSaveProfile, onNavigate }) {
       <section className="page-heading">
         <div>
           <span className="eyebrow">VISION AGRO / MEU PERFIL</span>
-          <h2>Seu perfil no Portal do Cliente</h2>
-          <p>Esta área é demonstrativa, mas as alterações ficam salvas neste navegador usando armazenamento local.</p>
+          <h2>Seu Perfil</h2>
+          <p>Personalize seu perfil conforme desejar.</p>
         </div>
         <button className="secondary-button" onClick={() => onNavigate("home")}>Voltar ao início</button>
       </section>
@@ -54,7 +54,7 @@ export default function MeuPerfil({ profile, onSaveProfile, onNavigate }) {
           <h3>{form.name}</h3>
           <p>{form.farm}</p>
           <label className="upload-button">Trocar foto<input type="file" accept="image/*" onChange={handlePhoto} /></label>
-          <small>A imagem é usada apenas neste navegador para demonstração.</small>
+          <small>Selecione uma imagem para sua foto de perfil</small>
         </aside>
 
         <form className="profile-form" onSubmit={submit}>
