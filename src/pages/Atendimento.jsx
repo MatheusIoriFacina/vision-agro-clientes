@@ -34,7 +34,7 @@ export default function Atendimento({ onNavigate, onOpenAssistant }) {
           <h2>Fale com a nossa equipe</h2>
           <p>Os canais abaixo possuem interações demonstrativas para simular como o atendimento funcionaria no produto final.</p>
         </div>
-        <button className="secondary-button" onClick={onOpenAssistant}>🌱 Tentar ajuda rápida</button>
+        <button className="secondary-button" onClick={onOpenAssistant}>Assistente Vision</button>
       </section>
 
       <section className="contact-grid">

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const initialMessages = [
-  { from: "bot", text: "Olá! 👋 Sou o Assistente Vision. Posso tentar resolver sua dúvida ou encaminhar você para nossa equipe." },
+  { from: "bot", text: "Olá! 👋 Sou o Assistente Vision. Posso resolver sua dúvida ou encaminhar você para nossa equipe." },
   { from: "bot", text: "Como posso ajudar hoje?" },
 ];
 
@@ -23,7 +23,7 @@ export default function Assistant({ onClose, onHumanSupport }) {
     <div className="assistant-overlay">
       <section className="assistant">
         <header className="assistant__header">
-          <div><strong>Assistente Vision</strong><span>Atendimento virtual • resposta simulada</span></div>
+          <div><strong>Assistente Vision</strong><span>Atendimento virtual</span></div>
           <button className="icon-button" onClick={onClose} aria-label="Fechar assistente">✕</button>
         </header>
 

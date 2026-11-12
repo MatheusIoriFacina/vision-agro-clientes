@@ -153,7 +153,7 @@ export default function App() {
     try {
       localStorage.setItem("visionAgroProfile", JSON.stringify(profile));
     } catch {
-      // O protótipo continua funcionando mesmo se o navegador bloquear o armazenamento local.
+
     }
   }, [profile]);
 
@@ -161,7 +161,7 @@ export default function App() {
     try {
       localStorage.setItem("visionAgroReviews", JSON.stringify(reviews));
     } catch {
-      // O protótipo continua funcionando mesmo se o navegador bloquear o armazenamento local.
+
     }
   }, [reviews]);
 
